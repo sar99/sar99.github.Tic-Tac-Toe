@@ -1,0 +1,16 @@
+body{
+        background: url('3.jpeg') no-repeat;
+	background-size: cover;}
+button[id="restart"]
+{
+        width: 36%;
+	margin-bottom: 20pxborder: none;
+       
+	outline: none;
+	height: 40px;
+	background: #006400;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
