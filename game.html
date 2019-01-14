@@ -1,91 +1,90 @@
 <html>
 <head>
-<title>
-Tic Tac Toe
-</title>
-<link rel="stylesheet" type="text/css" href="game.css">
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="game.css">
 </head>
-<body>
-<div>
-<button id="a" onclick="change(this.id)" value=0><img src="/home/saniya/Desktop/WebD/tic tac toe/add.png" height="200" width="200"></button>
-<button id="b" onclick="change(this.id)" value=0><img src="/home/saniya/Desktop/WebD/tic tac toe/add.png" height="200" width="200"></button>
-<button id="c" onclick="change(this.id)" value=0><img src="/home/saniya/Desktop/WebD/tic tac toe/add.png" height="200" width="200"></button><br>
-<button id="d" onclick="change(this.id)" value=0><img src="/home/saniya/Desktop/WebD/tic tac toe/add.png" height="200" width="200"></button>
-<button id="e" onclick="change(this.id)" value=0><img src="/home/saniya/Desktop/WebD/tic tac toe/add.png" height="200" width="200"></button>
-<button id="f" onclick="change(this.id)" value=0><img src="/home/saniya/Desktop/WebD/tic tac toe/add.png" height="200" width="200"></button><br>
-<button id="g" onclick="change(this.id)" value=0><img src="/home/saniya/Desktop/WebD/tic tac toe/add.png" height="200" width="200"></button>
-<button id="h" onclick="change(this.id)" value=0><img src="/home/saniya/Desktop/WebD/tic tac toe/add.png" height="200" width="200"></button>
-<button id="i" onclick="change(this.id)" value=0><img src="/home/saniya/Desktop/WebD/tic tac toe/add.png" height="200" width="200"></button><br><br><br>
-<button id="restart" onclick="reload()">RESTART</button>
-</div>
-<script type="text/javascript">
-
-var count=0,id;
-function change(id)
-{if(document.getElementById(id).value!=0)
-window.alert("Button has already been clicked");
-else if(count%2==0)
-{document.getElementById(id).innerHTML="<img src='/home/saniya/Desktop/WebD/tic tac toe/cross.png' width=\'200px\' height=\'200px\'>";
-document.getElementById(id).value=1;
-count=count+1;}
-else
-{document.getElementById(id).innerHTML="<img src='/home/saniya/Desktop/WebD/tic tac toe/zero.jpg' width=\'200px\' height=\'200px\'>";
-document.getElementById(id).value=2;
-count=count+1;}
-if(document.getElementById("a").value==1&&document.getElementById("b").value==1&&document.getElementById("c").value==1)
-{window.alert("Player 1 wins!!");
-location.reload();}
-else if(document.getElementById("d").value==1&&document.getElementById("e").value==1&&document.getElementById("f").value==1)
-{window.alert("Player 1 wins!!");
-location.reload();}
-else if(document.getElementById("g").value==1&&document.getElementById("h").value==1&&document.getElementById("i").value==1)
-{window.alert("Player 1 wins!!");
-location.reload();}
-else if(document.getElementById("a").value==1&&document.getElementById("d").value==1&&document.getElementById("g").value==1)
-{window.alert("Player 1 wins!!");
-location.reload();}
-else if(document.getElementById("b").value==1&&document.getElementById("e").value==1&&document.getElementById("h").value==1)
-{window.alert("Player 1 wins!!");
-location.reload();}
-else if(document.getElementById("c").value==1&&document.getElementById("f").value==1&&document.getElementById("i").value==1)
-{window.alert("Player 1 wins!!");
-location.reload();}
-else if(document.getElementById("a").value==1&&document.getElementById("e").value==1&&document.getElementById("i").value==1)
-{window.alert("Player 1 wins!!");
-location.reload();}
-else if(document.getElementById("c").value==1&&document.getElementById("e").value==1&&document.getElementById("g").value==1)
-{window.alert("Player 1 wins!!");
-location.reload();}
-else if(document.getElementById("a").value==2&&document.getElementById("b").value==2&&document.getElementById("c").value==2)
-{window.alert("Player 2 wins!!");
-location.reload();}
-else if(document.getElementById("d").value==2&&document.getElementById("e").value==2&&document.getElementById("f").value==2)
-{window.alert("Player 2 wins!!");
-location.reload();}
-else if(document.getElementById("g").value==2&&document.getElementById("h").value==2&&document.getElementById("i").value==2)
-{window.alert("Player 2 wins!!");
-location.reload();}
-else if(document.getElementById("a").value==2&&document.getElementById("d").value==2&&document.getElementById("g").value==2)
-{window.alert("Player 2 wins!!");
-location.reload();}
-else if(document.getElementById("b").value==2&&document.getElementById("e").value==2&&document.getElementById("h").value==2)
-{window.alert("Player 2 wins!!");
-location.reload();}
-else if(document.getElementById("c").value==2&&document.getElementById("f").value==2&&document.getElementById("i").value==2)
-{window.alert("Player 2 wins!!");
-location.reload();}
-else if(document.getElementById("a").value==2&&document.getElementById("e").value==2&&document.getElementById("i").value==2)
-{window.alert("Player 2 wins!!");
-location.reload();}
-else if(document.getElementById("c").value==2&&document.getElementById("e").value==2&&document.getElementById("g").value==2)
-{window.alert("Player 2 wins!!");
-location.reload();}
-else if(document.getElementById("a").value!=0&&document.getElementById("b").value!=0&&document.getElementById("c").value!=0&&document.getElementById("d").value!=0&&document.getElementById("e").value!=0&&document.getElementById("f").value!=0&&document.getElementById("g").value!=0&&document.getElementById("h").value!=0&&document.getElementById("i").value!=0)
-{window.alert("Oops!Try Again");
-location.reload();}
-}
-function reload()
-{location.reload();}
-</script>
-</body>
+	<body>
+		<div class="board">
+			<button id="a" onclick="change(this.id)" value=0><img src="add.png" height="200" width="200"></button>
+			<button id="b" onclick="change(this.id)" value=0><img src="add.png" height="200" width="200"></button>
+			<button id="c" onclick="change(this.id)" value=0><img src="add.png" height="200" width="200"></button><br>
+			<button id="d" onclick="change(this.id)" value=0><img src="add.png" height="200" width="200"></button>
+			<button id="e" onclick="change(this.id)" value=0><img src="add.png" height="200" width="200"></button>
+			<button id="f" onclick="change(this.id)" value=0><img src="add.png" height="200" width="200"></button><br>
+			<button id="g" onclick="change(this.id)" value=0><img src="add.png" height="200" width="200"></button>
+			<button id="h" onclick="change(this.id)" value=0><img src="add.png" height="200" width="200"></button>
+			<button id="i" onclick="change(this.id)" value=0><img src="add.png" height="200" width="200"></button><br><br><br>
+			<button id="restart" onclick="reload()">RESTART</button>
+		</div>
+		<script type="text/javascript">
+			var count=0,id;
+			function change(id) {
+				if(document.getElementById(id).value!=0)
+					window.alert("Button has already been clicked");
+				else if(count%2==0) {
+					document.getElementById(id).innerHTML="<img src='cross.png' width=\'200px\' height=\'200px\'>";
+					document.getElementById(id).value=1;
+					count=count+1;}
+				else {
+					document.getElementById(id).innerHTML="<img src='zero.jpg' width=\'200px\' height=\'200px\'>";
+					document.getElementById(id).value=2;
+					count=count+1;}
+				if(document.getElementById("a").value==1&&document.getElementById("b").value==1&&document.getElementById("c").value==1) {
+					window.alert("Player 1 wins!!");
+					location.reload();}
+				else if(document.getElementById("d").value==1&&document.getElementById("e").value==1&&document.getElementById("f").value==1) {
+					window.alert("Player 1 wins!!");
+					location.reload();}
+				else if(document.getElementById("g").value==1&&document.getElementById("h").value==1&&document.getElementById("i").value==1) {
+					window.alert("Player 1 wins!!");
+					location.reload();}
+				else if(document.getElementById("a").value==1&&document.getElementById("d").value==1&&document.getElementById("g").value==1) {
+					window.alert("Player 1 wins!!");
+					location.reload();}
+				else if(document.getElementById("b").value==1&&document.getElementById("e").value==1&&document.getElementById("h").value==1) {
+					window.alert("Player 1 wins!!");
+					location.reload();}
+				else if(document.getElementById("c").value==1&&document.getElementById("f").value==1&&document.getElementById("i").value==1) {
+					window.alert("Player 1 wins!!");
+					location.reload();}
+				else if(document.getElementById("a").value==1&&document.getElementById("e").value==1&&document.getElementById("i").value==1) {
+					window.alert("Player 1 wins!!");
+					location.reload();}
+				else if(document.getElementById("c").value==1&&document.getElementById("e").value==1&&document.getElementById("g").value==1) {
+					window.alert("Player 1 wins!!");
+					location.reload();}
+				else if(document.getElementById("a").value==2&&document.getElementById("b").value==2&&document.getElementById("c").value==2) {
+					window.alert("Player 2 wins!!");
+					location.reload();}
+				else if(document.getElementById("d").value==2&&document.getElementById("e").value==2&&document.getElementById("f").value==2) {
+					window.alert("Player 2 wins!!");
+					location.reload();}
+				else if(document.getElementById("g").value==2&&document.getElementById("h").value==2&&document.getElementById("i").value==2) {
+					window.alert("Player 2 wins!!");
+					location.reload();}
+				else if(document.getElementById("a").value==2&&document.getElementById("d").value==2&&document.getElementById("g").value==2) {
+					window.alert("Player 2 wins!!");
+					location.reload();}
+				else if(document.getElementById("b").value==2&&document.getElementById("e").value==2&&document.getElementById("h").value==2) {
+					window.alert("Player 2 wins!!");
+					location.reload();}
+				else if(document.getElementById("c").value==2&&document.getElementById("f").value==2&&document.getElementById("i").value==2) {
+					window.alert("Player 2 wins!!");
+					location.reload();}
+				else if(document.getElementById("a").value==2&&document.getElementById("e").value==2&&document.getElementById("i").value==2) {
+					window.alert("Player 2 wins!!");
+					location.reload();}
+				else if(document.getElementById("c").value==2&&document.getElementById("e").value==2&&document.getElementById("g").value==2) {
+					window.alert("Player 2 wins!!");
+					location.reload();}
+				else if(document.getElementById("a").value!=0&&document.getElementById("b").value!=0&&document.getElementById("c").value!=0&&document.getElementById("d").value!=0&&document.getElementById("e").value!=0&&document.getElementById("f").value!=0&&document.getElementById("g").value!=0&&document.getElementById("h").value!=0&&document.getElementById("i").value!=0)
+				{	
+					window.alert("Oops!Try Again");
+					location.reload();
+				}
+			}
+			function reload()
+				{ location.reload(); }
+		</script>
+	</body>
 </html>

@@ -1,21 +1,29 @@
-body{
-background: url('1.png') no-repeat;
-background-size: cover;
-}
-h1{
-
-	padding: 400px 0 0px; /*top,right,bottom,left*/
-	text-align: center;
-	font-size: 70px;	
-        font-weight:bold;
-        text-shadow: 2px 2px;}
-a{
-        padding: 0px 0 0px 700px; /*top,right,bottom,left*/
-	
-        color:#000;
-	font-size: 30px;
-        font-weight:bold;
+body {
+        background: url('1.png') no-repeat;
+        background-size: cover;
         }
-a:hover{
-color:#008000;
-}
+
+h1 {
+
+        padding: 400px 0 0px; /*top,right,bottom,left*/
+        text-align: center;
+        font-size: 70px;        
+        font-weight:bold;
+        text-shadow: 2px 2px;
+        }
+
+a {
+        padding: 10px 10px 10px 10px; /*top,right,bottom,left*/
+        margin-left: 40%;
+        color:#000;
+        font-size: 30px;
+        font-weight:bold;
+        border: 2px solid black;
+        border-radius: 5px;
+        }
+
+a:hover {
+        color:#008000;
+        }
+
+

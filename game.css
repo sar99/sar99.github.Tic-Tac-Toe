@@ -1,11 +1,11 @@
-body{
+body {
         background: url('3.jpeg') no-repeat;
-	background-size: cover;}
-button[id="restart"]
-{
-        width: 36%;
-	margin-bottom: 20pxborder: none;
-       
+		background-size: cover;}
+#restart {
+    width: 36%;
+	margin-bottom: 20px;
+	margin-left: 100px;
+	border: none;
 	outline: none;
 	height: 40px;
 	background: #006400;
@@ -14,3 +14,7 @@ button[id="restart"]
 	border-radius: 20px;
 }
 
+.board {
+	margin-top: 100px;
+	margin-left: 600px;
+}
